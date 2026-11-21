@@ -55,4 +55,8 @@ nav ul li a {
     justify-content: space-between;
     text-align: center;
 }
-
+.inclus{
+   color: bisque;
+    display: flex;
+    gap: 350px;
+}
