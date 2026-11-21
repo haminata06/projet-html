@@ -60,3 +60,19 @@ nav ul li a {
     display: flex;
     gap: 350px;
 }
+.programme p {
+    background-color: #594326;
+    color: bisque;
+    border: 1px solid #D6B477;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.programme ol {
+    background-color: #49371f;
+    color: bisque;
+    border: 1px solid #D6B477;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.7;
+}
