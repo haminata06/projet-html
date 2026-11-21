@@ -48,3 +48,11 @@ nav ul li a {
     text-align: center;
     border: 100px;
 }
+.programme{
+    color: bisque;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    text-align: center;
+}
+
