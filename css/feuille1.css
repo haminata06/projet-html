@@ -1,7 +1,17 @@
+/* //////AMELIORATION DES QUATRES PAGES///// */
+body {
+    font-family: "Josefin Sans", sans-serif;
+   background-color: var(--fond-general);
+}
 
+h1, h2, h3 {
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+/* ////// FIN AMELIORATION DES QUATRES PAGES///// */
 :root {
-  --primaire: #74a40b;
-  --accent: #87c711;
+  --fond-general: #f8e1bf;
+  --header: #f9d59e;
+  --menucouleur:rgb(77, 53, 10);
   --sombre: #10242b;
   --sable: #fbf6ef;
   --texte: #1f2d33;
@@ -10,14 +20,6 @@
   --corps: "Poppins", Arial, sans-serif;
   --rayon: 18px;
   --ombre: 0 10px 30px rgba(16, 36, 43, 0.12);
-}
-
-body {
-    font-family: "Josefin Sans", sans-serif;
-}
-
-h1, h2, h3 {
-    font-family: "Bricolage Grotesque", sans-serif;
 }
 
 
@@ -34,7 +36,7 @@ header {
     align-items: start;
     padding: 20px 1%;
     position: relative;
-    background-color: #9ba9c6;
+    background-color: var(--header);
     border-radius: 10px;
     position: sticky;
     top: 0px;
@@ -53,7 +55,7 @@ header {
     background-color: none ;
     border-radius: 16px;
     padding: 9px;
-    color: #e8e7ef;
+    color: rgba(255, 255, 255, 0.712);
     text-transform: uppercase;
 }
 
@@ -95,7 +97,7 @@ header {
     right: 0%;
     width: 150px;
     padding: 12px;
-    background-color: #b3c5d1;
+    background-color: #c5cbcf;
     opacity: 0.85;
     border: 2px solid #e8e7ef;
     border-radius: 12px;
@@ -127,7 +129,7 @@ header {
 
 /* SURVOL */
 .menu a:hover {
-    background-color: #7d0a36;
+   background: --var(menucouleur);
     color: white;
 }
 
@@ -184,7 +186,7 @@ header {
   flex-direction: column;
   overflow: auto;
   border-radius: var(--rayon);
-  background: rgb(233, 234, 232);
+  background: rgb(35, 37, 33);
   box-shadow: var(--ombre);
   transition: transform 0.3s;
 }
@@ -197,7 +199,6 @@ header {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-radius: 12px;
 }
 
 .carte-contenu {
@@ -205,12 +206,12 @@ header {
   display: flex;
   flex-direction: column;
   padding: 20px 24px 24px;
-  background: #e8ece8;
+   background-color: #f8e1bf;
 }
 
 .etiquette {
   margin: 0;
-  color: var(--primaire);
+  color:#65452f;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -242,7 +243,7 @@ header {
   max-width: 760px;
   padding: 36px;
   border-radius: var(--rayon);
-  background: rgb(155, 150, 142);
+  background-color: #f8d59f;
   color: var(--texte);
   box-shadow: var(--ombre);
   margin-left: 20%;
@@ -275,7 +276,7 @@ header {
   padding: 12px 14px;
   border: 2px solid #e1dbd2;
   border-radius: 10px;
-  background: white;
+  background: rgba(255, 255, 255, 0.525);
   font: inherit;
 }
 .formulaire input:focus,
@@ -338,8 +339,9 @@ header {
     display: flex;
     align-items: center;
     padding: 50px 8%;
-    color: white;
-    border-radius: 6px 6px 24px 24px;
+    color: rgba(255, 255, 255, 0.712);
+    border-radius: 1px 1px 1px 1px;
+    background-color: #f8e1bf;
 }
 
 .banniere-contenu {
@@ -397,6 +399,7 @@ header {
     align-items: center;
     gap: 50px;
     padding: 90px 8%;
+    background-color: #f8e1bf;
 }
 
 
@@ -435,7 +438,6 @@ header {
 .programme {
     padding: 12px;
     background-color: #f8e1bf;
-    border-radius: 12px;
 }
 
 
@@ -448,7 +450,7 @@ header {
 
 .jour {
     flex: 1 1 260px;
-    background-color: white;
+   background-color: #f8e1bf;
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
@@ -466,6 +468,7 @@ header {
 
 .jour-contenu {
     padding: 22px;
+    background-color: #f8e1bf;
 }
 
 .jour-contenu span {
@@ -491,6 +494,7 @@ header {
     align-items: center;
     gap: 50px;
     padding: 90px 8%;
+     background-color: #f8e1bf;
 }
 
 .inclus-image,
@@ -513,7 +517,7 @@ header {
 
 .galerie-section {
     padding:auto;
-    background-color: #f8f6f3;
+    background-color: #f8e1bf;
 }
 
 .galerie {
@@ -533,6 +537,7 @@ header {
 
 .tarifs {
     padding: 80px 8%;
+     background-color: #f8e1bf;
 }
 
 .tableau-conteneur {
@@ -574,8 +579,8 @@ header {
 .demande {
     text-align: center;
     padding: 70px 8%;
-    background-color: #7ba6f0;
-    border-radius: 12px;
+    background-color: #f8d59f;
+    border-radius: 0;
 }
 
 .demande h2 {
@@ -596,7 +601,36 @@ header {
     background: wheat;
     color: #0a2389;
 }
+footer h3{
+    margin-left: 40%;
+    margin-right: 43%;
+    background: none;
+    border-radius: 16px;
+   
+}
 
+.pied{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #f9d59e;
+    margin-top: 2%;
+    padding-top: 1%;
+    box-sizing: content-box;
+    border-radius: 12px;
+}
+.p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #332c39;
+    color: #eae8e7;
+    padding-top: 1%;
+    padding-right: 2%;
+    margin-bottom: 1%;
+    border-radius: 16px;
+}
 /* ADAPTATION AUX PETITS ECRANS */
 
 @media (max-width: 700px) {
@@ -637,7 +671,28 @@ header {
     .inclus h2 {
         font-size: 27px;
     }
+    /* footer */
 
+    footer h3 {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .pied {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .p {
+        width: 90%;
+        padding: 15px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
 }
 
 

@@ -10,35 +10,20 @@
   align-items: center;
   font-size: x-large;
 }
+:root{
+    --fond-general: #f8e1bf;
+  --header: #f9d59e;
+  --menucouleur:rgb(77, 53, 10);
+}
 body{
-    background-color: #362a16;
-}
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 20px 40px;
-}
-
-.menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-nav ul li a {
-    text-decoration:  none;
-    list-style: none;
-    color:bisque;
+    background-color: var(--fond-general);
 }
 .bouton {
   display: inline-block;
   padding: 14px 28px;
   border-radius: 100px;
-  background: #362a16;
-  color:bisque;
+  background-color: #f8e1bf;
+   color: #141110;
   font: inherit;
   font-weight: 600;
   text-decoration: none;
@@ -51,12 +36,12 @@ nav ul li a {
 }
 .tarifs-boutons{
     text-align: center;
-    background-color: #312003;
+    background-color: #f9d59e;
     font-size:15px;
     margin-top:20px ;
 }
 .presentation{
-    color: bisque;
+    color: #141110;
     gap: 40px;
     justify-content: space-between;
     text-align: center;
@@ -76,7 +61,7 @@ nav ul li a {
     font-size:30px;
 }
 .inclus {
-    color: bisque;
+    color: #141110;
     display: flex;
     gap: 100px;
     justify-content: center;
@@ -86,7 +71,7 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   padding: 10px 10px 10px;  
-  color: bisque;
+ color: #141110;
   text-align: center;
   justify-content: space-between;
   border: 1px solid #D6B477;
@@ -94,15 +79,15 @@ nav ul li a {
   border-radius: 1000px;
 }
 .programme p {
-    color: bisque;
+    color: #141110;
     border: 1px solid #D6B477;
     padding: 10px;
     border-radius: 100px;
 }
 
 .programme ol {
-    background-color: #49371f;
-    color: bisque;
+    background-color: #f8d59f;
+    color: #141110;
     border: 1px solid #D6B477;
     padding: 20px 20px 20px 40px;
     border-radius: 50px;
@@ -128,7 +113,7 @@ transition: transform 0.3s;
   display: flex;
   flex-direction: column;
   padding: 10px 10px 10px;  
-  color: bisque;
+  color: #141110;
   text-align: center;
   justify-content: space-between;
   border: 1px solid #D6B477;
@@ -147,7 +132,7 @@ transition: transform 0.3s;
   display: flex;
   flex-direction: column;
   padding: 10px 10px 10px;  
-  color: bisque;
+  color: #141110;
   text-align: center;
   justify-content: space-between;
   border: 1px solid #D6B477;
@@ -155,7 +140,7 @@ transition: transform 0.3s;
   border-radius: 1000px;
 }
 .tarifs {
-    color: bisque;
+    color: #141110;
     display: flex;
     text-decoration: none;
     justify-content: center;
@@ -271,7 +256,7 @@ transition: transform 0.3s;
 
     /* BOUTONS */
     .tarifs-boutons {
-        padding: 15px;
+        background-color: #f8d59f;
     }
 
     /* ECRITURES */
@@ -283,6 +268,29 @@ transition: transform 0.3s;
         font-size: 15px;
         line-height: 1.6;
     }
+    /* footer */
+
+    footer h3 {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .pied {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .p {
+        width: 90%;
+        padding: 15px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+   
 }
 /* ////////////////////////////////////////////////DESIGN FAQ//////////////////////////////////////////// */
 .hero1{
@@ -318,5 +326,140 @@ align-items: center;
   text-align: center;
   justify-content: space-between;
   font-size: large;
-  color: bisque;
+  color: #141110;
+}
+footer h3{
+    margin-left: 40%;
+    margin-right: 43%;
+    background: none;
+    border-radius: 16px;
+   
+}
+
+.pied{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #f9d59e;
+    margin-top: 2%;
+    padding-top: 1%;
+    box-sizing: content-box;
+    border-radius: 12px;
+}
+.p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #332c39;
+    color: #eae8e7;
+    padding-top: 1%;
+    padding-right: 2%;
+    margin-bottom: 1%;
+    border-radius: 16px;
+
+}
+/* ///////////////////AJOUTER/////////////////// */
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px 1%;
+    position: relative;
+    background-color: var(--header);
+    border-radius: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    margin-bottom:none;
+    margin-top: 2%;
+}
+
+/* LOGO */
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.logo span{
+    background-color: none ;
+    border-radius: 16px;
+    padding: 9px;
+    color: rgba(255, 255, 255, 0.712);
+    text-transform: uppercase;
+}
+
+
+/* BOUTON BURGER */
+.burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.burger.out{
+    display: none;
+}
+
+.burger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #eeecf4;
+    border-radius: 5px;
+}
+.Fermer {
+    display: none;
+}
+.Fermer.int{
+    display: block;
+}
+
+
+/* MENU */
+.menu {
+    display: none;
+    position: absolute;
+    top: 60%;
+    right: 0%;
+    width: 150px;
+    padding: 12px;
+    background-color: #b3c5d1;
+    opacity: 0.85;
+    border: 2px solid #e8e7ef;
+    border-radius: 12px;
+    z-index: 100;
+    
+}
+
+/* OUVERTURE DU MENU */
+.menu.ouvert {
+    display: block;
+}
+
+/* LISTE */
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* LIENS */
+.menu a {
+    display: block;
+    padding: 14px;
+    color: #0e0d10;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* SURVOL */
+.menu a:hover {
+   background: var(--menucouleur);
+    color: white;
 }

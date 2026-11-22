@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AZURA TRAVEL</title>
-    <link rel="stylesheet" href="css/feuille2.css">
-</head>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque :opsz,wght@12..96,200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> 
+      <title>AZURA TRAVEL</title>
+      <link rel="icon" href="img/logo.png">
+      <link rel="stylesheet" href="css/feuille2.css">
+      <meta name="Agence" content="Un site de voyage">
+      <script src="js/script.js" defer></script> 
+    </head>
 <body>
-    <header class="entete">
-        <nav class="menu" id="menu" aria-label="Menu principal"> 
-            <ul>
-                <li><a href="destination2.html" > <strong> ACCEUIL</strong></a></li>
-                <li><a href="faq.html" > <strong> FAQ</strong></a></li>
-            </ul>
-        </nav>
-    </header>
+    <header> 
+         <!-- --------------------------------entete et menu ------------------------------- -->
+
+           <a href="#" class="logo">
+                <img src="img/logo.png" alt="" width="50" height="50">
+                <span>Azura</span>
+           </a>
+  
+            <button class="burger">
+             <span></span>
+              <span></span>
+             <span></span>
+            </button>
+    
+            <button class="Fermer" id="Fermer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#000000">
+              <path d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z"/>
+              </svg>
+            </button>
+
+            <nav class="menu" id="menu" >
+                <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav> 
+       </header>
    <main>
        <section class="hero">
         <div class="hero-contenu">
@@ -168,5 +193,34 @@
             <a class="bouton" href="#devis"><em><strong>Demander un devis</strong></em></a>
         </div>
    </main>
+    <footer>
+          <h3>Contactez-nous</h3>
+          <section class="pied">
+            <div class="p">
+                <div>Tel</div>
+                <ul>
+                    <li>+39 333 456 7890</li>
+                    <li>+212 6 00 00 00 02</li>
+                </ul>
+            </div>
+            <div class="p">
+                <div>E-mail</div>
+                <ul>
+                    <li>contact@azura.com</li>
+                    <li>info@azura-tourisme.com</li>
+                </ul>
+            </div>
+            <div class="p">
+                <div>Agence</div>
+                <ul>
+                    <li>25 Avenue Hassan II, Casablanca, Maroc</li>
+                    <li>Via Roma 25, 50123 Florence, Italie.</li>
+                </ul>
+
+            </div>
+        
+          </section>
+        
+        </footer>
 </body>
 </html>
