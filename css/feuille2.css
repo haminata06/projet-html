@@ -1,7 +1,7 @@
 .hero {
   background:
     linear-gradient(rgba(16, 36, 43, 0.25), rgba(16, 36, 43, 0.7)),
-    url("../images/Dubaï\ au\ coucher\ du\ soleil.png") center / cover;
+    url("../img/Dubaï\ au\ coucher\ du\ soleil.png") center / cover;
     border-radius: 200px;
   color: #070500;
   text-align: center;
@@ -283,4 +283,40 @@ transition: transform 0.3s;
         font-size: 15px;
         line-height: 1.6;
     }
+}
+/* ////////////////////////////////////////////////DESIGN FAQ//////////////////////////////////////////// */
+.hero1{
+    background:
+    linear-gradient(rgba(16, 36, 43, 0.25), rgba(16, 36, 43, 0.7)),
+    url("../img/pexels-leeloothefirst-5428832.jpg") center / cover;
+  color: #070500;
+  text-align: center;
+  padding: 10px 10px 10px;
+  margin-left: auto;
+  align-items: center;
+  font-size: xx-large;
+  border-radius: 30px;
+}
+.cartes1{
+display: flex;
+flex-wrap: wrap;
+gap: 28px;
+margin-top: auto;
+line-height: 0;
+}
+.carte1{
+flex: 1 1 auto;
+display: flex;
+flex-direction: column;
+font-size: large;
+align-items: center;
+}
+.carte-contenu1{
+  flex: 1;
+  display: flex;
+  flex-direction: column;  
+  text-align: center;
+  justify-content: space-between;
+  font-size: large;
+  color: bisque;
 }
