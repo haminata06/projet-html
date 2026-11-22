@@ -129,7 +129,7 @@ header {
 
 /* SURVOL */
 .menu a:hover {
-   background: --var(menucouleur);
+   background: var(--menucouleur);
     color: white;
 }
 
