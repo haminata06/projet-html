@@ -1,0 +1,286 @@
+.hero {
+  background:
+    linear-gradient(rgba(16, 36, 43, 0.25), rgba(16, 36, 43, 0.7)),
+    url("../images/Dubaï\ au\ coucher\ du\ soleil.png") center / cover;
+    border-radius: 200px;
+  color: #070500;
+  text-align: center;
+  padding: 100px 100px 100px;
+  margin-left: auto;
+  align-items: center;
+  font-size: x-large;
+}
+body{
+    background-color: #362a16;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration:  none;
+    list-style: none;
+    color:bisque;
+}
+.bouton {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 100px;
+  background: #362a16;
+  color:bisque;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: scale background 0.2s;
+}
+.bouton:hover{
+    background: #c58007;
+    color:bisque;
+}
+.tarifs-boutons{
+    text-align: center;
+    background-color: #312003;
+    font-size:15px;
+    margin-top:20px ;
+}
+.presentation{
+    color: bisque;
+    gap: 40px;
+    justify-content: space-between;
+    text-align: center;
+    border: 100px;
+    margin-top: 30px;
+}
+.programme{
+    color: bisque;
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+}
+.surtitre{
+    color: rgb(142, 81, 8);
+    text-align: center;
+    font-size:30px;
+}
+.inclus {
+    color: bisque;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+.inclus p{
+    flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px;  
+  color: bisque;
+  text-align: center;
+  justify-content: space-between;
+  border: 1px solid #D6B477;
+  padding: 0;
+  border-radius: 1000px;
+}
+.programme p {
+    color: bisque;
+    border: 1px solid #D6B477;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.programme ol {
+    background-color: #49371f;
+    color: bisque;
+    border: 1px solid #D6B477;
+    padding: 20px 20px 20px 40px;
+    border-radius: 50px;
+    line-height: 2;
+    gap:10px;
+}
+.cartes{
+display: flex;
+flex-wrap: wrap;
+gap: 28px;
+margin-top: 30px;
+}
+.carte{
+flex: 1 1 300px;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+border-radius: 300px;
+transition: transform 0.3s;
+}
+.carte-contenu{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px;  
+  color: bisque;
+  text-align: center;
+  justify-content: space-between;
+  border: 1px solid #D6B477;
+  padding: 0;
+  border-radius: 1000px;
+}
+.carte img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 600px;
+  margin-top: 20px;
+}
+.tarifs p{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px;  
+  color: bisque;
+  text-align: center;
+  justify-content: space-between;
+  border: 1px solid #D6B477;
+  padding: 0;
+  border-radius: 1000px;
+}
+.tarifs {
+    color: bisque;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+      line-height: 2;
+}
+.tarifs ul{
+    list-style: none;
+}
+
+
+/* ////////////////////RESPONSIVE DESIGN : TELEPHONES ET TABLETTES ////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 768px) {
+
+    /* Réglages généraux */
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 10px;
+    }
+
+    /* HEADER ET MENU */
+    header {
+        justify-content: flex-end;
+        padding: 15px 5px;
+        flex-wrap: wrap;
+    }
+
+    .menu ul {
+        gap: 20px;
+    }
+
+    /* SECTION HERO */
+    .hero {
+        padding: 60px 20px;
+        margin: 10px 0;
+        border-radius: 50px;
+        background-position: center;
+    }
+
+    /* PRESENTATION */
+    .presentation {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    /* PROGRAMME DU SEJOUR */
+    .programme {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .programme p,
+    .programme ol {
+        width: 100%;
+        border-radius: 40px;
+        padding: 15px 15px 15px 25px;
+        gap:10px;
+    }
+
+    /* PRESTATIONS INCLUSES */
+    .inclus {
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .inclus p {
+        width: 100%;
+        border-radius: 25px;
+        padding: 15px;
+    }
+
+    /* GALERIE */
+    .cartes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .carte {
+        width: 100%;
+        flex: 1 1 auto;
+        border-radius: 30px;
+    }
+
+    .carte img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 100px;
+    }
+
+    .carte-contenu {
+        border-radius: 25px;
+        padding: 15px;
+    }
+
+    /* TARIFS */
+    .tarifs {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .tarifs p {
+        width: 100%;
+        border-radius: 25px;
+        padding: 15px;
+    }
+
+    /* BOUTONS */
+    .tarifs-boutons {
+        padding: 15px;
+    }
+
+    /* ECRITURES */
+    .surtitre {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
