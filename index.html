@@ -6,17 +6,19 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque :opsz,wght@12..96,200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> 
-      <title>Bachir</title>
+      <title>AZURA</title>
       <link rel="icon" href="img/logo.png">
       <link rel="stylesheet" href="css/feuille1.css">
       <meta name="Agence" content="Un site de voyage">
       <script src="js/script.js" defer></script> 
    </head>
    <body>
-       <header>
+        <header> 
+         <!-- --------------------------------entete et menu ------------------------------- -->
+
            <a href="#" class="logo">
                 <img src="img/logo.png" alt="" width="50" height="50">
-                <span>Escale</span>
+                <span>Azura</span>
            </a>
   
             <button class="burger">
@@ -34,20 +36,19 @@
             <nav class="menu" id="menu" >
                 <ul>
                   <li><a href="#Accueil">Accueil</a></li>
-                  <li><a href="#destinations">Destinations</a></li>
-                  <li><a href="#apropos">À propos</a></li>
-                  <li><a href="#FAQ">Contact</a></li>
+                  <li><a href="FAQ.html">FAQ</a></li>
                 </ul>
             </nav> 
        </header>
         <main>
+            <!-- ---------------------------image d'accueil------------------------------------ -->
             <section class="hero" id="Accueil">
                 <div> <p class="surtitre">Agence de voyages depuis 2014</p></div>
-                <div > <h1>Explorez le monde avec Escale</h1></div>
+                <div > <h1>Explorez le monde avec AAZURA</h1></div>
                 <div><p class="hero-texte"> Découvrez des destinations incroyables et vivez des expériences uniques.</p></div>
                 <div>  <a href="#destinations" class="bouton">Commencer l'aventure</a></div>
             </section>
-
+           <!-- ---------------------------------------------------destinations------------------------- -->
             <section id="destinations">
                <div class="cartes"> 
                   
@@ -57,7 +58,8 @@
                            <p class="etiquette">Asie · Émirats arabes unis</p>
                            <h3>Dubaï</h3>
                            <p>Gratte-ciel impressionnants, Burj Khalifa, plages luxueuses et architecture futuriste au cœur du désert.</p>
-                           <p class="prix"><span>7 jours</span> <span>dès <strong>1 290 €</strong></span></p>
+                           <p class="prix"><span>7 jours</span> <span>dès <strong>980 €</strong></span></p>
+                           <a href="destination2.html">VOIR PLUS</a>
                        </div>
                     </article>
 
@@ -114,6 +116,7 @@
 
                 </div>
             </section> 
+            <!-- ---------------------------------formulaire------------------------------------------------------ -->
             <form class="formulaire" id="formulaire" action="#">
                <div class="ligne">
                    <div class="champ">
@@ -159,9 +162,36 @@
                 </div>
                 <button class="bouton" type="submit">Envoyer ma demande</button>
             </form>
-       </main>
-       <footer>
+        </main>
+        <!-- --------------------------------------------footer-------------------------------------------------- -->
+        <footer>
+          <h3>Contactez-nous</h3>
+          <section class="pied">
+            <div class="p">
+                <div>Tel</div>
+                <ul>
+                    <li>+39 333 456 7890</li>
+                    <li>+212 6 00 00 00 02</li>
+                </ul>
+            </div>
+            <div class="p">
+                <div>E-mail</div>
+                <ul>
+                    <li>contact@azura.com</li>
+                    <li>info@azura-tourisme.com</li>
+                </ul>
+            </div>
+            <div class="p">
+                <div>Agence</div>
+                <ul>
+                    <li>25 Avenue Hassan II, Casablanca, Maroc</li>
+                    <li>Via Roma 25, 50123 Florence, Italie.</li>
+                </ul>
+
+            </div>
         
-       </footer>
+          </section>
+        
+        </footer>
     </body>
 </html>

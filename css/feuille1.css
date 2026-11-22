@@ -5,7 +5,7 @@
   --sombre: #10242b;
   --sable: #fbf6ef;
   --texte: #1f2d33;
-  --gris: #5d6d74;
+  --gris:#666;
   --titres: "Playfair Display", Georgia, serif;
   --corps: "Poppins", Arial, sans-serif;
   --rayon: 18px;
@@ -34,7 +34,7 @@ header {
     align-items: start;
     padding: 20px 1%;
     position: relative;
-    background-color: #9ba9c6;
+    background-color: rgb(60, 60, 233);
     border-radius: 10px;
     position: sticky;
     top: 0px;
@@ -53,7 +53,7 @@ header {
     background-color: none ;
     border-radius: 16px;
     padding: 9px;
-    color: #e8e7ef;
+    color:var(--sable);
     text-transform: uppercase;
 }
 
@@ -76,7 +76,7 @@ header {
     display: block;
     width: 30px;
     height: 3px;
-    background-color: #eeecf4;
+    background-color: var(--sable);
     border-radius: 5px;
 }
 .Fermer {
@@ -97,7 +97,7 @@ header {
     padding: 12px;
     background-color: #b3c5d1;
     opacity: 0.85;
-    border: 2px solid #e8e7ef;
+    border: 2px solid ;
     border-radius: 12px;
     z-index: 100;
     
@@ -167,6 +167,15 @@ header {
     border-radius: 16px;
     background-color: #87c711;
     margin-bottom: 5%;
+}
+article div a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: smaller;
+   
+    
 }
 
 
@@ -242,7 +251,7 @@ header {
   max-width: 760px;
   padding: 36px;
   border-radius: var(--rayon);
-  background: rgb(155, 150, 142);
+  background: var(--gris);
   color: var(--texte);
   box-shadow: var(--ombre);
   margin-left: 20%;
@@ -526,7 +535,7 @@ header {
     flex: 1 1 200px;
     width: 100%;
     height: 260px;
-    border-radius: 14px;
+    border-radius: 100px;
 }
 
 /* TARIFS */
@@ -596,56 +605,35 @@ header {
     background: wheat;
     color: #0a2389;
 }
-
-/* ADAPTATION AUX PETITS ECRANS */
-
-@media (max-width: 700px) {
-
-    .banniere {
-        min-height: 380px;
-        padding: 35px 6%;
-    }
-
-    .banniere h1 {
-        font-size: 44px;
-    }
-
-    .presentation,
-    .inclus {
-        flex-direction: column;
-        padding: 55px 6%;
-    }
-
-    .programme,
-    .galerie-section,
-    .tarifs {
-        padding: 55px 6%;
-    }
-
-    .presentation-image,
-    .inclus-image {
-        width: 100%;
-    }
-
-    .presentation-image img,
-    .inclus-image img {
-        height: 280px;
-    }
-
-    .section-titre h2,
-    .presentation-texte h2,
-    .inclus h2 {
-        font-size: 27px;
-    }
-
+footer h3{
+    margin-left: 40%;
+    margin-right: 43%;
+    background: none;
+    border-radius: 16px;
+   
 }
 
+.pied{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background:  #e2d7d7 ;
+    margin-top: 2%;
+    padding-top: 1%;
+    box-sizing: content-box;
+    border-radius: 12px;
+}
+.p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0e0d10;
+    color: #eae8e7;
+    padding-top: 1%;
+    padding-right: 2%;
+    margin-bottom: 1%;
+    border-radius: 16px;
+    border: var(--sable)solid;
 
-
-
-
-
-
-
-
-
+}
