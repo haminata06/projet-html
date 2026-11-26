@@ -1,3 +1,4 @@
+/* //////////////////////////////////////////////////DESIGN DEST2////////////////////////////////////////// */
 .hero {
   background:
     linear-gradient(rgba(16, 36, 43, 0.25), rgba(16, 36, 43, 0.7)),
@@ -144,13 +145,11 @@ transition: transform 0.3s;
     display: flex;
     text-decoration: none;
     justify-content: center;
-      line-height: 2;
+    line-height: 2;
 }
 .tarifs ul{
     list-style: none;
 }
-
-
 /* ////////////////////RESPONSIVE DESIGN : TELEPHONES ET TABLETTES ////////////////////////////////////////////////////*/
 
 @media screen and (max-width: 768px) {
@@ -328,39 +327,9 @@ align-items: center;
   font-size: large;
   color: #141110;
 }
-footer h3{
-    margin-left: 40%;
-    margin-right: 43%;
-    background: none;
-    border-radius: 16px;
-   
-}
 
-.pied{
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    background-color: #f9d59e;
-    margin-top: 2%;
-    padding-top: 1%;
-    box-sizing: content-box;
-    border-radius: 12px;
-}
-.p{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #332c39;
-    color: #eae8e7;
-    padding-top: 1%;
-    padding-right: 2%;
-    margin-bottom: 1%;
-    border-radius: 16px;
-
-}
-/* ///////////////////AJOUTER/////////////////// */
-/* HEADER */
+/* ///////////////////Même chose/////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////HEADER////////////////////////////////////////// */
 header {
     display: flex;
     justify-content: space-between;
@@ -462,4 +431,36 @@ header {
 .menu a:hover {
    background: var(--menucouleur);
     color: white;
+}
+/* /////////////////////////////////////////////footer même chose///////////////////////////////////////////////////////////*/
+footer h3{
+    margin-left: 40%;
+    margin-right: 43%;
+    background: none;
+    border-radius: 16px;
+   
+}
+
+.pied{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #f9d59e;
+    margin-top: 2%;
+    padding-top: 1%;
+    box-sizing: content-box;
+    border-radius: 12px;
+}
+.p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #332c39;
+    color: #eae8e7;
+    padding-top: 1%;
+    padding-right: 2%;
+    margin-bottom: 1%;
+    border-radius: 16px;
+
 }

@@ -22,8 +22,6 @@ h1, h2, h3 {
   --ombre: 0 10px 30px rgba(16, 36, 43, 0.12);
 }
 
-
-
 /* RÈGLES GÉNÉRALES */
 * {
     box-sizing: border-box;
@@ -360,7 +358,6 @@ header {
     font-weight: 700;
     letter-spacing: 2px;
     color: #b67a5c;
-
 }
 
 
